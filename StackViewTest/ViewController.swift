@@ -18,19 +18,11 @@ class ViewController: UIViewController {
         labelShortDescription.text = texteditDescription.text
         buttonHideShow.setTitle( labelShortDescription.isHidden ? "Hide" : "Show", for: UIControlState.normal)
     }
-    
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         texteditDescription.textContainerInset = .init(top: 0, left: 0, bottom: 0, right: 0)
         texteditDescription.textContainer.lineFragmentPadding = 0
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
